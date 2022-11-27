@@ -86,5 +86,14 @@
         android:id="@+id/expertOrdersFragment"
         android:name="universe.student.hackathondigital.ExpertOrdersFragment"
         android:label="fragment_expert_orders"
-        tools:layout="@layout/fragment_expert_orders" />
+        tools:layout="@layout/fragment_expert_orders" >
+        <action
+            android:id="@+id/action_expertOrdersFragment_to_expertAnswersFragment"
+            app:destination="@id/expertAnswersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/expertAnswersFragment"
+        android:name="universe.student.hackathondigital.ExpertAnswersFragment"
+        android:label="fragment_expert_answers"
+        tools:layout="@layout/fragment_expert_answers" />
 </navigation>

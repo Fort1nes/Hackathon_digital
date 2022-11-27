@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import universe.student.hackathondigital.databinding.FragmentExpertOrdersBinding
@@ -23,6 +24,11 @@ class ExpertOrdersFragment : Fragment(R.layout.fragment_expert_orders) {
         super.onViewCreated(view, savedInstanceState)
 
         binding = FragmentExpertOrdersBinding.bind(view)
+
+        binding.btnAnswers.setOnClickListener{
+            findNavController().navigate(R.id.action_expertOrdersFragment_to_expertAnswersFragment)
+        }
+
 
         recyclerView = binding.recyclerOrders
         recyclerView.setHasFixedSize(true)

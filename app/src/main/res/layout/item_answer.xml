@@ -71,15 +71,130 @@
             android:textSize="17sp"
             app:layout_constraintTop_toBottomOf="@+id/btn_open" />
 
-        <TextView
-            android:id="@+id/txt_criteria"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="1. Цена\n2. Компетентность\n3. Опыт"
-            android:textColor="@color/blue_btn"
-            android:textSize="17sp"
             app:layout_constraintTop_toBottomOf="@+id/txt_grade_title"
-            tools:layout_editor_absoluteX="0dp" />
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/editTextNumber"
+                    android:layout_width="81dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="76dp"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/blue_btn"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_criteria" />
+
+                <TextView
+                    android:id="@+id/txt_criteria"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1. Опыт в организации мероприятий"
+                    android:textColor="@color/blue_btn"
+                    android:textSize="17sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="72dp"
+                    android:backgroundTint="#FF9200"
+                    android:text="Оценить"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    app:cornerRadius="40dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_criteria" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/editTextNumber2"
+                    android:layout_width="81dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="76dp"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_criteria2" />
+
+                <TextView
+                    android:id="@+id/txt_criteria2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2. Квалификация сотрудников"
+                    android:textColor="@color/blue_btn"
+                    android:textSize="17sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="72dp"
+                    android:backgroundTint="#FF9200"
+                    android:text="Оценить"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    app:cornerRadius="40dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_criteria2" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/editTextNumber3"
+                    android:layout_width="81dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="76dp"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_criteria3" />
+
+                <TextView
+                    android:id="@+id/txt_criteria3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2. Цена"
+                    android:textColor="@color/blue_btn"
+                    android:textSize="17sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="72dp"
+                    android:backgroundTint="#FF9200"
+                    android:text="Оценить"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    app:cornerRadius="40dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_criteria3" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
 
 
         <com.google.android.material.button.MaterialButton
