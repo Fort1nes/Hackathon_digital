@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="15dp"
+    android:backgroundTint="@color/white_order"
+    app:cardElevation="2dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Организация Хакатона"
+            android:textAlignment="center"
+            android:textColor="@color/blue_btn"
+            android:textSize="23sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:background="@color/blue_btn"
+            app:layout_constraintTop_toBottomOf="@+id/txt_name"
+            tools:layout_editor_absoluteX="26dp" />
+
+        <TextView
+            android:id="@+id/txt_goal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Организовать двухдневный Хакатон в СурГУ"
+            android:textAlignment="center"
+            android:textColor="@color/blue_btn"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view"
+            android:layout_marginTop="10dp"/>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:background="@color/blue_btn"
+            app:layout_constraintTop_toBottomOf="@+id/txt_goal"
+            tools:layout_editor_absoluteX="26dp" />
+
+        <TextView
+            android:id="@+id/txt_criteria_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Критерии:"
+            android:textAlignment="center"
+            android:textColor="@color/blue_btn"
+            android:textSize="17sp"
+            app:layout_constraintTop_toBottomOf="@+id/view2"
+            android:layout_marginTop="3dp"/>
+
+        <TextView
+            android:id="@+id/txt_criteria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. Цена\n2. Компетентность\n3. Опыт"
+            android:textColor="@color/blue_btn"
+            android:textSize="17sp"
+            app:layout_constraintTop_toBottomOf="@+id/txt_criteria_title"
+            tools:layout_editor_absoluteX="0dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

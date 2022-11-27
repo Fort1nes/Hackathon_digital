@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AdminExpertsFragment"
+    android:background="@drawable/main_background">
+
+    <TextView
+        android:id="@+id/txt_experts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="35dp"
+        android:text="Эксперты"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="32sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_experts"
+        android:layout_width="182dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="#FF9200"
+        android:padding="10dp"
+        android:text="Эксперты"
+        android:textColor="@color/white"
+        android:textSize="21sp"
+        app:cornerRadius="40dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_orders"
+        android:layout_width="182dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="@color/white"
+        android:padding="10dp"
+        android:text="Заказы"
+        android:textColor="@color/blue_btn"
+        android:textSize="21sp"
+        app:cornerRadius="40dp" />
+
+</RelativeLayout>
